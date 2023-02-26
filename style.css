@@ -1,0 +1,96 @@
+
+body{
+    background-color: #e9e8e8;
+}
+.first-conteiner{
+    display: flex;
+    justify-content: center;
+
+}
+.first-info{
+    width: 582px;
+    height: 270px;  
+    padding: 50px;
+}
+.first-img{
+    width: 440px;
+    height: 414px;
+    background-image: url(images/Circle\ design.svg);
+}
+.button{
+    background-color: #E02C6D;
+    border-radius: 10px;
+    border: #E02C6D;
+}
+.svg-conteiner{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px double beige;
+    align-items: center;
+    width: 1110px;
+    height: 110px;
+    margin-top: 69px;
+    margin-left: 165px;
+    margin-right: 165px;
+
+}
+.title{
+    text-align: center;
+}
+.second-conteiner{
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:30px;
+    margin-left: 197px;
+    margin-right: 196px;
+}
+.items{
+    background-color: white;
+    border:2px solid gainsboro;
+    border-radius: 5px;
+    padding-top: 17px;
+    padding-left: 15px;
+    padding-right: 14px;
+    width: 320px;
+    box-shadow: 10px;
+}
+.items img{
+    width: 300px;
+    border-radius: 5px;
+    align-items: center;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star-half-stroke.filled{
+    color: #FFC014
+}
+
+.more-info{
+    color: #E02C6D;
+    text-align: end;
+}
+.last{
+    position: relative;
+    height: 300px;
+}
+.third-conteiner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap:200px;
+    height: 270px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.footer{
+    background-color: black;
+}
+.footer-info{
+    color: antiquewhite;
+    text-align: center;
+    
+}
