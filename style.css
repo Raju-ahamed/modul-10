@@ -3,8 +3,8 @@ body{
     background-color: #e9e8e8;
 }
 .first-conteiner{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
 
 }
 .first-info{
@@ -13,6 +13,7 @@ body{
     padding: 50px;
 }
 .first-img{
+    display: flex;
     width: 440px;
     height: 414px;
     background-image: url(images/Circle\ design.svg);
@@ -23,15 +24,13 @@ body{
     border: #E02C6D;
 }
 .svg-conteiner{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
     justify-content: space-evenly;
     border: 1px double beige;
     align-items: center;
-    width: 1110px;
+    justify-items: center;
     height: 110px;
-    margin-top: 69px;
-    margin-left: 165px;
-    margin-right: 165px;
 
 }
 .title{
@@ -42,8 +41,8 @@ body{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap:30px;
-    margin-left: 197px;
-    margin-right: 196px;
+    justify-items: center;
+    padding: 30px;
 }
 .items{
     background-color: white;
@@ -79,18 +78,56 @@ body{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-column-gap:200px;
-    height: 270px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    
+    border-radius: 6px;
+    justify-items: center;
 }
-.footer{
-    background-color: black;
+.details{
+    text-align: center;
 }
 .footer-info{
     color: antiquewhite;
+    background-color: black;
     text-align: center;
     
 }
+/* for mobile */
+@media only screen and (max-width:688px){
+    .first-conteiner{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1,1fr);
+
+    }
+    .first-info{
+        width: 300px;
+    }
+    .first-img{
+        width:100px;
+    }
+    .second-conteiner{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+        justify-items: center;
+    }
+    .svg-conteiner{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap:10px;
+        width: 100%;
+    }
+    .third-conteiner{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+    }
+    .footer-info{
+        background-color: black;
+        color: aliceblue;
+        text-align: center;
+        width: 100%;
+        margin-top: 200px;
+    }
+    }
+
+    
